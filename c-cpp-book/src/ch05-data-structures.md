@@ -63,7 +63,7 @@ fn main() {
 ### Rust references
 - References in Rust are roughly equivalent to pointers in C with some key differences
     - It is legal to have any number of read-only (immutable) references to a variable at any point of time. A reference cannot outlive the variable scope (this is a key concept called **lifetime**; discussed in detail later)
-    - Only a single writable (mutable) reference to a mutable variable is permitted and it must no overlap with any other reference.
+    - Only a single writable (mutable) reference to a mutable variable is permitted and it must not overlap with any other reference.
 ```rust
 fn main() {
     let mut a = 42;
