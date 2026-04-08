@@ -306,8 +306,10 @@ struct Point {
 // Declarative macro (like a template)
 macro_rules! log_call {
     ($func_name:expr, $body:expr) => {
-        println!("Calling {}", $func_name);
-        $body
+        {
+            println!("Calling {}", $func_name);
+            $body
+        }
     };
 }
 
